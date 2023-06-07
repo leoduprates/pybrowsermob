@@ -10,7 +10,7 @@ def setup_module(module):
 
 class TestClient(object):
     def setup_method(self, method):
-        from browsermobproxy.client import Client
+        from pybrowsermob.client import Client
         self.client = Client("localhost:9090")
 
     def teardown_method(self, method):
